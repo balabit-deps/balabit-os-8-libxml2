@@ -1,0 +1,6 @@
+xml2-config-fix.patch
+0002-fix-python-multiarch-includes.patch
+Fix-memory-leak-in-xmlSchemaValidateStream.patch
+Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch
+Fix-freeing-of-nested-documents.patch
+python3-unicode-errors.patch
