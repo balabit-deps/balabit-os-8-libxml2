@@ -4,3 +4,9 @@ Fix-memory-leak-in-xmlSchemaValidateStream.patch
 Fix-infinite-loop-in-xmlStringLenDecodeEntities.patch
 Fix-freeing-of-nested-documents.patch
 python3-unicode-errors.patch
+CVE-2020-24977.patch
+CVE-2021-3516.patch
+CVE-2021-3517.patch
+CVE-2021-3518.patch
+CVE-2021-3537.patch
+Patch-for-security-issue-CVE-2021-3541.patch

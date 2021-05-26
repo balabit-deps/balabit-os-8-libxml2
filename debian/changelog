@@ -1,3 +1,34 @@
+libxml2 (2.9.10+dfsg-5ubuntu0.20.04.1) focal-security; urgency=medium
+
+  * SECURITY UPDATE: out-of-bounds read
+    - debian/patches/CVE-2020-24977.patch: Make sure that truncated UTF-8
+      sequences don't cause an out-of-bounds array access in xmllint.
+    - CVE-2020-24977
+  * SECURITY UPDATE: use-after-free in xmlEncodeEntitiesInternal
+    - debian/patches/CVE-2021-3516.patch: Call htmlCtxtUseOptions to make sure
+      that names aren't stored in dictionaries.
+    - CVE-2021-3516
+  * SECURITY UPDATE: heap-based buffer overflow in xmlEncodeEntitiesInternal 
+    - debian/patches/CVE-2021-3517.patch: Add some checks to validate input is
+      UTF-8 format, supplementing CVE-2020-24977 fix.
+    - CVE-2021-3517
+  * SECURITY UPDATE: use-after-free in xmlXIncludeDoProcess 
+    - debian/patches/CVE-2021-3518.patch: Move from a block list to an allow
+      list approach to avoid descending into other node types that can't
+      contain elements.
+    - CVE-2021-3518
+  * SECURITY UPDATE: NULL pointer dereference in xmlValidBuildAContentModel
+    - debian/patches/CVE-2021-3537.patch: Check return value of recursive calls
+      to xmlParseElementChildrenContentDeclPriv and return immediately in case
+      of errors.
+    - CVE-2021-3537
+  * SECURITY UPDATE: Exponential entity expansion 
+    - debian/patches/Patch-for-security-issue-CVE-2021-3541.patch: Add check to
+      xmlParserEntityCheck to prevent entity exponential.
+    - CVE-2021-3541
+
+ -- Avital Ostromich <avital.ostromich@canonical.com>  Wed, 26 May 2021 19:51:20 -0400
+
 libxml2 (2.9.10+dfsg-5) unstable; urgency=medium
 
   * Team upload.
