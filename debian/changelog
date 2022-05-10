@@ -1,3 +1,12 @@
+libxml2 (2.9.10+dfsg-5ubuntu0.20.04.3) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Integer overflows
+    - debian/patches/CVE-2022-29824.patch: Fix integer overflows in
+      xmlBuf and xmlBuffer in tree.c, buf.c.
+    - CVE-2022-29824
+
+ -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Tue, 10 May 2022 11:13:24 -0300
+
 libxml2 (2.9.10+dfsg-5ubuntu0.20.04.2) focal-security; urgency=medium
 
   * SECURITY UPDATE: use-after-free of ID and IDREF attributes
