@@ -1,3 +1,12 @@
+libxml2 (2.9.10+dfsg-5ubuntu0.20.04.4) focal-security; urgency=medium
+
+  * SECURITY UPDATE: Possible cross-site scripting
+    - debian/patches/CVE-2016-3709.patch: Revert "do not URI escape
+      in server side includes" in HTMLtree.c.
+    - CVE-2016-3709
+
+ -- Leonidas Da Silva Barbosa <leo.barbosa@canonical.com>  Mon, 01 Aug 2022 11:05:23 -0300
+
 libxml2 (2.9.10+dfsg-5ubuntu0.20.04.3) focal-security; urgency=medium
 
   * SECURITY UPDATE: Integer overflows
