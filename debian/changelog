@@ -1,3 +1,15 @@
+libxml2 (2.9.10+dfsg-5ubuntu0.20.04.8) focal-security; urgency=medium
+
+  * SECURITY UPDATE: use-after-free in xmlXIncludeAddNode
+    - debian/patches/CVE-2022-49043.patch: fix UaF in xinclude.c.
+    - CVE-2022-49043
+  * SECURITY UPDATE: buffer overread in xmllint
+    - debian/patches/CVE-2024-34459.patch: fix buffer issue when using
+      htmlout option in xmllint.c.
+    - CVE-2024-34459
+
+ -- Marc Deslauriers <marc.deslauriers@ubuntu.com>  Tue, 28 Jan 2025 08:31:05 -0500
+
 libxml2 (2.9.10+dfsg-5ubuntu0.20.04.7) focal-security; urgency=medium
 
   * SECURITY UPDATE: use-after-free via XInclude expansion
